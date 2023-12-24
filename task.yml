@@ -15,7 +15,7 @@
     - name: docker tag
       command: docker tag mavenwebapp nitinnande5355/mavenwebapp
     - name : Push Docker Image
-      command: docker push nitinnande5355/mavenwebapp
+      command: sudo docker push nitinnande5355/mavenwebapp
 - name: Second Play - K8s Deployment
   hosts: eks
   tasks:
