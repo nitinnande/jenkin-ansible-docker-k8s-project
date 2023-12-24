@@ -12,8 +12,6 @@
        dest: /home/ansadmin
     - name : Build image
       command: docker build -t nitinnande5355/mavenwebapp .
-    - name: docker login
-      command: docker login -u nitinnande5355 -p Nitin5355
     - name : Push Docker Image
       command: docker push nitinnande5355/mavenwebapp
 - name: Second Play - K8s Deployment
