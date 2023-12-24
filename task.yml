@@ -11,7 +11,9 @@
        src: target
        dest: /home/ansadmin
     - name : Build image
-      command: docker build -t nitinnande5355/mavenwebapp .
+      command: docker build -t mavenwebapp .
+    - name: docker tag
+      command: docker tag mavenwebapp nitinnande5355/mavenwebapp
     - name : Push Docker Image
       command: docker push nitinnande5355/mavenwebapp
 - name: Second Play - K8s Deployment
